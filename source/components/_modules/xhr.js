@@ -3,7 +3,7 @@ export default function xhr(param = '') {
 	const query = {'data': ''};
 	const xhr = new XMLHttpRequest();
 
-	xhr.open('POST', 'http://krapipl.imumk.ru:8082/api/mobilev1/update', true);
+	xhr.open('POST', 'https://krapipl.imumk.ru:8082/api/mobilev1/update', true);
 	xhr.setRequestHeader('Content-Type', 'application/json; charset=utf-8');
 	xhr.send(JSON.stringify(query));	
 
