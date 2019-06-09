@@ -1,0 +1,12 @@
+/* Пользовательские Шрифты */
+@import '_fonts/icons/_icons';
+@import '_fonts/custom/_font-1';
+
+@include font-1(Segoe UI);
+
+$font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+$font-icons: 'Fontello', sans-serif;
+
+$text-color: #3c3c3b;
+
+

@@ -1,0 +1,104 @@
+/* Разметка
+
+<div class="tab">
+<div class="tab__nav">
+<a href="" class="tab__link is-active" data-for="1">Вход</a>
+<a href="" class="tab__link" data-for="2">Регистрация</a>
+</div>
+<div class="tab__content">
+<div class="tab__screen" data-id="1"></div>
+<div class="tab__screen" data-id="2"></div>
+</div>
+</div>
+
+*/
+
+.tab {
+	border-radius: 6px;
+	overflow: hidden;
+}
+
+.tab__nav {
+	display: flex;
+	justify-content: space-between;	
+}
+
+.tab__link {
+	display: block;
+	color: #FFFFFF;
+	font-size: 16px;
+	font-weight: bold;
+	background: $hover-color;
+	flex-grow: 1;
+	width: 50%;
+	text-align: center;
+	line-height: 50px;
+	transition: background-color 0.15s;
+
+	&:hover {
+		background: #dd3061;
+		color: #FFFFFF;
+	}
+
+	&.is-active {
+		background: #FFFFFF;
+		color: $text-color;
+	}
+}
+
+.tab__screen {
+	display: none;
+
+	&[data-id="2"] {
+		display: block;
+	}
+}
+
+
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+	
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+}
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 993px) {
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+}

@@ -1,0 +1,13 @@
+// @extend %space-between;
+%space-between {
+  display: flex;
+  justify-content: space-between;  
+}
+
+// @extend %container;
+%container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;  
+}
