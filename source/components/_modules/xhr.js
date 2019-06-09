@@ -37,8 +37,6 @@ export default function xhr(param = '') {
 						return ~el.title.indexOf(param.search);						
 					});
 				}
-
-				console.log(param);					
 			}			
 
 			itemList.innerHTML = '';
